@@ -1,0 +1,29 @@
+# authors:
+#   <author>:
+#     name: string        # Author name
+#     description: string # Author description
+#     avatar: url         # Author avatar
+#     slug: url           # Author profile slug
+#     url: url            # Author website URL
+
+authors:
+  pastoor:
+    name: Pastoor de Jong       
+    description: Parochiepriester         
+    avatar: ../../../assets/authors/priester.png
+    # slug: url
+    # url: url
+
+  olivier:
+    name: Olivier Spoor
+    description: Redactielid
+    avatar: ../../../assets/authors/redactie_icon.png
+    # slug: url
+    # url: url
+
+  bestuur:
+    name: Parochiebestuur
+    description: Het bestuur
+    avatar: ../../../assets/authors/redactie_icon.png
+    # slug: url           # Author profile slug
+    # url: url            # Author website URL

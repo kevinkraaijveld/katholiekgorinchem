@@ -1,1 +1,83 @@
-site_name: My Docs
+site_name: HH. Martelaren van Gorcum
+theme: 
+  name: material
+  language: nl
+  palette:
+    primary: blue grey
+    accent: red
+  features:
+    - navigation.tabs
+  #   - toc.integrate 
+    - navigation.footer
+  font:
+    text: Roboto
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  icon:
+    admonition:
+      note: fontawesome/solid/music
+
+site_url: ""
+use_directory_urls: false
+
+nav:
+  - Welkom:
+    - berichten/index.md
+  - Artikelen:
+    - artikelen/index.md
+  - Over ons: overons.md
+  - Contact: contact.md
+
+
+extra:
+  social:
+    - icon: fontawesome/regular/envelope
+      link: https://katholiekgorinchem.nl/contact
+    - icon: fontawesome/solid/phone
+      link: tel:+31623902455
+    - icon: fontawesome/brands/whatsapp 
+      link: https://whatsapp.com/channel/0029VaD6aB2IN9isbDRkju2b
+  generator: false
+
+copyright: Parochie van de Heilige Martelaren van Gorcum • Wijnkoperstraat 4 • 4204 HK • Gorinchem
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+
+plugins:
+  - search
+  - blog:
+      blog_dir: berichten
+      post_date_format: full
+      post_url_format: "{slug}"
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      archive_name: Archief
+      archive_date_format: MMMM yyyy
+      authors_file: ".authors.yml"
+      archive: false
+      blog_toc: true
+  - blog:
+      blog_dir: artikelen
+      post_date_format: full
+      post_url_format: "{slug}"
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      archive_name: Archief
+      archive_date_format: MMMM yyyy
+      authors_file: ".authors.yml"
+      archive: false
+      blog_toc: true

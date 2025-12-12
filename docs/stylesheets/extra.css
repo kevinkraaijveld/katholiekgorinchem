@@ -1,0 +1,24 @@
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+nav {
+  text-align: start;
+}
+
+.md-ellipsis {
+  text-align: start;
+}
+
+h1 {
+  text-align: center;
+}
+
+blockquote {
+  font-size: 0.6rem;
+}
+
+.md-grid {
+  max-width: 1000px;
+}/*# sourceMappingURL=extra.css.map */

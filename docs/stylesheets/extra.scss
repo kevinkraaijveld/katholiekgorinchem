@@ -1,0 +1,126 @@
+// // Colors //
+
+// // Green
+
+// $green-primary: #008000;
+// $green-typeset: #167000;
+// $green-background: #00961946;
+
+// // Gold
+
+// $gold-primary: #f0cc00;
+// $gold-typeset: #ac9200;
+// $gold-background: #f0cc0046;
+
+// // Purple
+
+// $purple-primary: #74008b;
+// $purple-typeset: #5a006c;
+// $purple-background: #5a006c57;
+
+// // Neutral
+
+// $neutral-primary: #652e2e;
+// $neutral-typeset: #783636;
+// $neutral-background: #96000046;
+
+
+// :root {
+//   /* groen */ 
+//   // --md-primary-fg-color:        #008000;
+//   /* paars */
+//   // --md-primary-fg-color:        #74008b;
+//   /* goud */
+//   --md-primary-fg-color:        #f0cc00;
+//   /* neutraal */
+//   /* --md-primary-fg-color:        #652e2e; */
+//   --md-primary-fg-color--light: #949B96;
+//   --md-primary-fg-color--dark:  #2C423F;
+  
+// }
+
+// :root > * {
+//   // --md-typeset-a-color: #167000;
+//   //--md-typeset-a-color: #5a006c;
+//   --md-typeset-a-color: #ac9200; 
+//   // --md-typeset-a-color: #783636;
+// }
+
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+nav {
+  text-align: start;
+}
+
+.md-ellipsis {
+  text-align: start;
+}
+
+h1 {
+  text-align: center;
+}
+// h2 {
+
+//   /* groen */ 
+//   // color: #008000;
+//   /* paars */
+//   // color: #74008b;
+//   /* goud */
+//   color: #bda000;
+//   /* color: #783636; */
+// }
+
+blockquote {
+  font-size: .6rem;
+}
+
+.md-grid {
+  max-width: 1000px; 
+}
+
+// .md-typeset .admonition.note,
+// .md-typeset details.note {
+//   // border-color: #008000;
+//   // border-color: #74008b;
+//   border-color: #f0cc00;
+//   /* border-color: #800000; */
+// }
+// .md-typeset .note > .admonition-title,
+// .md-typeset .note > summary {
+//   // background-color: #00961946;
+//   //background-color: #5a006c57;
+//   background-color: #f0cc0046;
+//   /* background-color: #96000046; */
+// }
+// .md-typeset .note > .admonition-title::before,
+// .md-typeset .note > summary::before {
+//   // background-color: #008000;
+//   // background-color: #74008b;
+//   background-color: #f0cc00;
+//   /* background-color: #800000; */
+// }
+
+// .md-typeset .admonition.abstract,
+// .md-typeset details.abstract {
+//   // border-color: #008000;
+//   // border-color: #74008b;
+//   border-color: #f0cc00;
+//   /* border-color: #800000; */
+// }
+// .md-typeset .abstract > .admonition-title,
+// .md-typeset .abstract > summary {
+//   // background-color: #00961946;
+//   // background-color: #5a006c57;
+//   background-color: #f0cc0046;
+//   /* background-color: #96000046; */
+// }
+// .md-typeset .abstract > .admonition-title::before,
+// .md-typeset .abstract > summary::before {
+//   // background-color: #008000;
+//   // background-color: #74008b;
+//   background-color: #f0cc00;
+//   /* background-color: #800000; */
+// }
