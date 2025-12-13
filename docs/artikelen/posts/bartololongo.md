@@ -15,7 +15,7 @@ hide:
 
 Op 19 oktober heeft paus Leo XVI de zalige Bartolo Longo heilig verklaard. Daarmee erkent de Kerk officieel de buitengewone weg van bekering die deze Italiaanse leek heeft afgelegd; een weg die voert van diepe duisternis naar het licht van Christus.
 <!-- more -->
-![Bartolo Longo](assets/artikelen/bartololongo.jpg){ align=right width="360" }
+![Bartolo Longo](https://raw.githubusercontent.com/olivierspoor/katholiekgorinchem/gh-pages/assets/artikelen/bartololongo.jpg){ align=right width="360" }
 
 Bartolo Longo werd in 1841 geboren in een vrome familie nabij Brindisi, in Zuid-Italië. Na de dood van zijn moeder verloor hij zijn geloof en raakte hij tijdens zijn rechtenstudie in Napels verstrikt in het antiklerikale klimaat van zijn tijd. De jonge student, beïnvloed door professoren die de Kerk en de paus verachtten, liet hij zich meeslepen in het spiritisme en uiteindelijk zelfs in het satanisme. Hij werd tot “priester van Satan” gewijd en voerde rituelen uit die rechtstreeks gericht waren tegen God en de Kerk.
 
