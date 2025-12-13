@@ -9,15 +9,15 @@
 authors:
   pastoor:
     name: Pastoor de Jong       
-    description: Parochiepriester         
-    avatar: ../../../assets/authors/priester.png
+    description: Pastoor de Jong was onze parochiepriester tot aan zijn overlijden op 16 november 2025.        
+    avatar: ../../../assets/authors/pastoor.jpeg
     # slug: url
     # url: url
 
   olivier:
     name: Olivier Spoor
-    description: Redactielid
-    avatar: ../../../assets/authors/redactie_icon.png
+    description: Beheerder van de website en redactielid.
+    avatar: ../../../assets/authors/olivier.jpeg
     # slug: url
     # url: url
 
@@ -30,7 +30,7 @@ authors:
 
   vdakker:
     name: Yvonne van den Akker-Savelsbergh
-    description: Parochiaan
+    description: exegete Nieuwe Testament
     avatar: ../../../assets/authors/redactie_icon.png
     # slug: url           # Author profile slug
     # url: url            # Author website URL

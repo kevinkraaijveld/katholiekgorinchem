@@ -2,7 +2,7 @@
 draft: false 
 date: 2025-12-07
 categories:
-  - Van het parochiebestuur
+  - Uit het bisdom
   - Aankondigingen
 authors:
   - bestuur

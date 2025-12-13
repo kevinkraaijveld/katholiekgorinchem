@@ -25,6 +25,7 @@ nav:
     - berichten/index.md
   - Artikelen:
     - artikelen/index.md
+  - In Memoriam: inmemoriam.md
   - Over ons: overons.md
   - Contact: contact.md
 
@@ -32,7 +33,7 @@ nav:
 extra:
   social:
     - icon: fontawesome/regular/envelope
-      link: https://katholiekgorinchem.nl/contact
+      link: /contact.html
     - icon: fontawesome/solid/phone
       link: tel:+31623902455
     - icon: fontawesome/brands/whatsapp 
