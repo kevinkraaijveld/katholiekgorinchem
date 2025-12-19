@@ -11,6 +11,8 @@ hide:
   - toc
 ---
 
+# Liturgische agenda vanaf januari
+
 Met ingang van januari 2026 zal de aanvangstijd van de zondagsmis verplaats worden:
 
 **Wekelijkse Eucharistievieringen:**
