@@ -1,7 +1,7 @@
 ---
 draft: false 
 date: 2025-12-19
-pin: false
+pin: true
 categories:
   - Van het parochiebestuur
 authors:
