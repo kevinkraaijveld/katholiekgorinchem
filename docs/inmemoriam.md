@@ -10,7 +10,7 @@ Op zondag 16 november is pastoor De Jong van Gorinchem thuis dood aangetroffen. 
 
 Ype Sjoerd, zoals hij in zijn familie werd genoemd, werd geboren in Leeuwarden en groeide op als middelste van drie jongens in een Nederlands Hervormd gezin. Het gezin verhuisde later naar Leerdam, waar hij zijn jeugd heeft doorgebracht. Hij was een intelligente jongen en besloot na het gymnasium in Gorinchem om natuurkunde te gaan studeren in Utrecht. Daar sloot hij vriendschap met een student en diens familie, die hem in contact brachten met de Rooms-Katholieke Kerk. Hij brak zijn studie natuurkunde af en ging theologie studeren in Heerlen. 
 
-![Pastoor de Jong](https://raw.githubusercontent.com/olivierspoor/katholiekgorinchem/gh-pages/assets/inmemoriam/pastoordejong.png){ align=left width="360" }
+![Pastoor de Jong](https://katholiekgorinchem.nl/assets/inmemoriam/pastoordejong.png){ align=left width="360" }
 
 Hij ontwikkelde een groot gevoel van naastenliefde; zijn aandacht ging uit naar vluchtelingen. Allengs werd hij steeds meer gegrepen door de liefde tot Christus. Hij wilde intreden bij de Paters van de Heilige Geest en werd door hen gezonden naar Ethiopië om te werken onder de Borana, een nomadenvolk. Hij leerde hun taal en heeft zich met hart en ziel van zijn taak gekweten.
 
@@ -22,7 +22,7 @@ Over de jaren groeide onze werkrelatie uit tot een hechte vriendschap. Deze werd
 
 Daarbij bemoedigden we elkaar, spoorden elkaar aan en waar nodig werd er gecorrigeerd. Want Ype stak zijn mening niet onder stoelen of banken. Met zijn analytisch vermogen kon hij de dingen goed duiden en helder verwoorden. Hij stond open voor kritiek. Kritiek over derden nam hij niet blindelings over  - hij toetste dat aan zijn eigen ervaring en inzicht.
 
-![Priester](https://raw.githubusercontent.com/olivierspoor/katholiekgorinchem/gh-pages/assets/inmemoriam/priester.png){ align=right width="360" }
+![Priester](https://katholiekgorinchem.nl/assets/inmemoriam/priester.png){ align=right width="360" }
 
 Dit alles paarde hij aan een diep geloof. Al werd dat niet door iedereen begrepen, zijn fundament was Christus. Tekenend is dan ook de grondslag die hij legde voor het pastoraal beleid in de federatie, en die tevens de kern was van zijn priesterleven:    
 **mensen bij Christus brengen**.
@@ -34,4 +34,4 @@ We moeten een geliefd mens loslaten, maar we mogen hem aanbevelen aan God, op Wi
 Ype, rust nu in de vrede van je Heer!    
 *Pastoor Meijer*
 
-![Rouwadvertentie](https://raw.githubusercontent.com/olivierspoor/katholiekgorinchem/gh-pages/assets/inmemoriam/rouwadvertentie.jpeg)
+![Rouwadvertentie](https://katholiekgorinchem.nl/assets/inmemoriam/rouwadvertentie.jpeg)

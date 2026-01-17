@@ -17,4 +17,4 @@ Het jubileumjaar van het bisdom zal in het teken staan van de zending van de Ker
 
 Het bisdom Rotterdam werd opgericht in 1956 (op 2 februari).
 
-> De volledige uitnodiging vind u hier: [uitnodiging.pdf](https://raw.githubusercontent.com/olivierspoor/katholiekgorinchem/gh-pages/assets/downloads/20260201_uitnodigingjubileumvieringbisdom.pdf)
+> De volledige uitnodiging vind u hier: [uitnodiging.pdf](https://katholiekgorinchem.nl/assets/downloads/20260201_uitnodigingjubileumvieringbisdom.pdf)

@@ -10,27 +10,27 @@ authors:
   pastoor:
     name: Pastoor de Jong       
     description: Pastoor de Jong was onze parochiepriester tot aan zijn overlijden op 16 november 2025.        
-    avatar: https://raw.githubusercontent.com/olivierspoor/katholiekgorinchem/gh-pages/assets/authors/pastoor.jpeg
+    avatar: https://katholiekgorinchem.nl/assets/authors/pastoor.jpeg
     # slug: url
     # url: url
 
   olivier:
     name: Olivier Spoor
     description: Beheerder van de website en redactielid.
-    avatar: https://raw.githubusercontent.com/olivierspoor/katholiekgorinchem/gh-pages/assets/authors/olivier.jpeg
+    avatar: https://katholiekgorinchem.nl/assets/authors/olivier.jpeg
     # slug: url
     # url: url
 
   bestuur:
     name: Parochiebestuur
     description: Het bestuur
-    avatar: https://raw.githubusercontent.com/olivierspoor/katholiekgorinchem/gh-pages/assets/authors/redactie_icon.png
+    avatar: https://katholiekgorinchem.nl/assets/authors/redactie_icon.png
     # slug: url           # Author profile slug
     # url: url            # Author website URL
 
   vdakker:
     name: Yvonne van den Akker-Savelsbergh
     description: exegete Nieuwe Testament
-    avatar: https://raw.githubusercontent.com/olivierspoor/katholiekgorinchem/gh-pages/assets/authors/redactie_icon.png
+    avatar: https://katholiekgorinchem.nl/assets/authors/redactie_icon.png
     # slug: url           # Author profile slug
     # url: url            # Author website URL
