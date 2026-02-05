@@ -1,5 +1,5 @@
 site_name: HH. Martelaren van Gorcum
-theme: 
+theme:
   name: material
   language: nl
   palette:
@@ -7,8 +7,8 @@ theme:
     accent: red
   features:
     - navigation.tabs
-  #   - toc.integrate 
-    - navigation.footer
+  #   - toc.integrate
+
   font:
     text: Roboto
   logo: assets/logo.png
@@ -21,22 +21,79 @@ site_url: ""
 use_directory_urls: false
 
 nav:
+  - Home: index.md
+
   - Berichten:
-    - berichten/index.md
+      - Overzicht: berichten/index.md
+
   - Artikelen:
-    - artikelen/index.md
+      - Overzicht: artikelen/index.md
+
+  - Onze parochie:
+      - Overzicht: onzeparochie.md
+
+      - Vieren:
+          - Over vieren: parochie/vieren/index.md
+          - Biechten: parochie/vieren/biechten.md
+          - Dagelijkse Mis: parochie/vieren/dagelijkse-mis.md
+          - Dopen: parochie/vieren/dopen.md
+          - Trouwen: parochie/vieren/trouwen.md
+          - Uitvaarten: parochie/vieren/uitvaarten.md
+          - Ziekenzalving: parochie/vieren/ziekenzalving.md
+
+      - Leren:
+          - Over leren: parochie/leren/index.md
+          - bijbelcursus: parochie/leren/bijbelcursus.md
+          - Eerste Communie: parochie/leren/eerste-communie.md
+          - katholiek leven: parochie/leren/katholiek-leven.md
+
+      - Dienen:
+          - Over dienen: parochie/dienen/index.md
+          - Parochiële Caritas Instelling: parochie/dienen/pci.md
+          - Voedselbank: parochie/dienen/voedselbank.md
+
+      - Bidden:
+          - Over bidden: parochie/bidden/index.md
+          - De rozenkrans: parochie/bidden/rozenkrans.md
+          - Geheimen van de rozenkrans: parochie/bidden/geheimen-rozenkrans.md
+          - Gebedsoefeningen: parochie/bidden/gebedsoefeningen.md
+          - Gebed tot de Heilige Geest: parochie/bidden/heilige-geest.md
+          - Gebed tot de aartsengel Michaël: parochie/bidden/aartsengel-michael.md
+
+      - Gemeenschap:
+          - Over gemeenschap: parochie/gemeenschap/index.md
+          - Berichten: parochie/gemeenschap/berichten.md
+          - Koffie na de Mis: parochie/gemeenschap/koffie-na-de-mis.md
+          - RK koor Intermezzo: parochie/gemeenschap/intermezzo.md
+          - RK jongerenkoor Tutti: parochie/gemeenschap/tutti.md
+          - Katholiek worden: parochie/gemeenschap/katholiek-worden.md
+
+      - Roosters:
+          - Overzicht: parochie/roosters/index.md
+          - Crèche zondagsmis: parochie/roosters/creche-zondagsmis.md
+          - Koffieschenkrooster: parochie/roosters/koffieschenkrooster.md
+          - Korenrooster: parochie/roosters/korenrooster.md
+          - Kostersrooster: parochie/roosters/kostersrooster.md
+          - Lectorenrooster: parochie/roosters/lectorenrooster.md
+          - Misdienaarsrooster: parochie/roosters/misdienaarsrooster.md
+
+
+
+
   - In Memoriam: inmemoriam.md
   - Over ons: overons.md
   - Contact: contact.md
 
 
+
 extra:
   social:
     - icon: fontawesome/regular/envelope
-      link: ./contact.html
+      link: /contact.html
+      target: _self
     - icon: fontawesome/solid/phone
       link: tel:+31623902455
-    - icon: fontawesome/brands/whatsapp 
+    - icon: fontawesome/brands/whatsapp
       link: https://whatsapp.com/channel/0029VbBZTv79xVJiB1zM7f3n
   generator: false
 
@@ -44,6 +101,9 @@ copyright: Parochie van de Heilige Martelaren van Gorcum • Wijnkoperstraat 4 �
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/custom.js
 
 markdown_extensions:
   - pymdownx.caret
