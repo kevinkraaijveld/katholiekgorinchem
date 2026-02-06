@@ -73,6 +73,12 @@ span.blockspam {
 .in-memoriam-text {
   flex: 1;
 }
+.md-post.md-post--excerpt {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom:2rem;
+}
 
 .in-memoriam img.round-image {
   flex-shrink: 0;
