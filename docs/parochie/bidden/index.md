@@ -11,14 +11,16 @@ title: Samen Bidden
   </p>
   <p>
     Voor wie de rozenkrans wil bidden, volg deze <a href="/parochie/bidden/rozenkrans.html">link naar de rozenkrans</a>.  
-    U kunt ook bidden tot de Heilige Geest voor wijsheid en leiding, of tot Sint-Michiel voor bescherming.  
+    <br>  
+    U kunt ook bidden tot <a href="/parochie/bidden#gebed-tot-de-aartsengel-michael">de Heilige Geest</a> voor wijsheid en leiding, of tot <a href="/parochie/bidden#gebed-tot-de-heilige-geest">Sint-Michiel</a> voor bescherming.  
   </p>
   <p>
-    Daarnaast bieden wij eenvoudige gebedsoefeningen aan om te reflecteren over uw geloof, hoop, liefde en berouw.  
+    Daarnaast bieden wij eenvoudige <a href="/parochie/bidden#gebedsoefeningen">gebedsoefeningen</a> aan om te reflecteren over uw geloof, hoop, liefde en berouw.  
     Laat uw gebed een moment van stilte en overgave zijn, waarbij u openstaat voor Gods nabijheid en troost.
   </p>
 </div>
-
+           
+          
 
   <!-- Right column: candle -->
   <div class="pray-candle">
