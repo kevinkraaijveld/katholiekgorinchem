@@ -11,8 +11,8 @@ theme:
 
   font:
     text: Roboto
-  logo: assets/logo.png
-  favicon: assets/logo.png
+  logo: assets/martelarenlogo.png
+  favicon: assets/martelarenlogo.png
   icon:
     admonition:
       note: fontawesome/solid/music
