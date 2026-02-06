@@ -2,21 +2,31 @@
 title: Samen Bidden
 ---
 
-<div style="display: flex; gap: 40px; align-items: flex-start; font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto;">
+<div class="pray-container">
 
   <!-- Left column: intro text -->
-  <div style="flex: 1; font-size: 16px; line-height: 1.5; color: #111;">
-    <p>Welkom bij ons gebedshulp. Hier kunt u uw intenties stilletjes opdragen en een kaarsje aansteken.  
-    Voor wie de rozenkrans wil bidden, volg deze <a href="/parochie/bidden/rozenkrans.html">link naar de rozenkrans</a>.</p>
-  </div>
+<div class="pray-text">
+  <p>
+    Bidden is een krachtig middel om uw hart te openen voor Gods aanwezigheid en leiding.  
+  </p>
+  <p>
+    Voor wie de rozenkrans wil bidden, volg deze <a href="/parochie/bidden/rozenkrans.html">link naar de rozenkrans</a>.  
+    U kunt ook bidden tot de Heilige Geest voor wijsheid en leiding, of tot Sint-Michiel voor bescherming.  
+  </p>
+  <p>
+    Daarnaast bieden wij eenvoudige gebedsoefeningen aan om te reflecteren over uw geloof, hoop, liefde en berouw.  
+    Laat uw gebed een moment van stilte en overgave zijn, waarbij u openstaat voor Gods nabijheid en troost.
+  </p>
+</div>
+
 
   <!-- Right column: candle -->
-  <div style="flex-shrink: 0; text-align: center;">
+  <div class="pray-candle">
     <div id="candle" class="candle">
       <div class="wick"></div>
       <div class="flame"></div>
     </div>
-    <button id="candleButton" style="margin-top: 20px; padding: 12px 24px; font-size: 16px; cursor: pointer; background: #ffcc66; border: none; border-radius: 6px;">
+    <button id="candleButton">
       Steek een kaarsje aan
     </button>
   </div>
@@ -24,6 +34,37 @@ title: Samen Bidden
 </div>
 
 <style>
+  .pray-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+
+  .pray-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+  }
+
+  .pray-candle {
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .pray-candle button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ffcc66;
+    border: none;
+    border-radius: 6px;
+  }
+
   .candle {
     position: relative;
     width: 60px;
@@ -72,7 +113,20 @@ title: Samen Bidden
     opacity: 0.6;
     cursor: default;
   }
+
+  /* Responsive: stack text above candle on small screens */
+  @media (max-width: 700px) {
+    .pray-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .pray-candle {
+      margin-top: 20px;
+    }
+  }
 </style>
+
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
