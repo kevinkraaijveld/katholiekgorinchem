@@ -33,7 +33,7 @@ nav:
       - Overzicht: onzeparochie.md
 
       - Vieren:
-          - Over vieren: parochie/vieren/index.md
+          - Samen vieren: parochie/vieren/index.md
           - Biechten: parochie/vieren/biechten.md
           - Dagelijkse Mis: parochie/vieren/dagelijkse-mis.md
           - Dopen: parochie/vieren/dopen.md
@@ -42,31 +42,31 @@ nav:
           - Ziekenzalving: parochie/vieren/ziekenzalving.md
 
       - Leren:
-          - Over leren: parochie/leren/index.md
-          - bijbelcursus: parochie/leren/bijbelcursus.md
-          - Eerste Communie: parochie/leren/eerste-communie.md
-          - katholiek leven: parochie/leren/katholiek-leven.md
+          - Samen leren: parochie/leren/index.md
+          - Alpha cursus: parochie/leren/#de-alphacursus
+          - Catholicism: parochie/leren#catholicism
+          - katholiek leven: parochie/leren#katholiek-leven
 
       - Dienen:
-          - Over dienen: parochie/dienen/index.md
-          - Parochiële Caritas Instelling: parochie/dienen/pci.md
-          - Voedselbank: parochie/dienen/voedselbank.md
+          - Samen dienen: parochie/dienen/index.md
+          - Voedselbank: parochie/dienen#inzameling-voor-de-voedselbank
+          - Parochiële Caritas Instelling: parochie/dienen#parochiele-caritas-instelling-pci
 
       - Bidden:
-          - Over bidden: parochie/bidden/index.md
+          - Samen bidden: parochie/bidden/index.md
           - De rozenkrans: parochie/bidden/rozenkrans.md
-          - Geheimen van de rozenkrans: parochie/bidden/geheimen-rozenkrans.md
+          - Geheimen van de rozenkrans: parochie/bidden/rozenkrans.html#geheimen-van-de-rozenkrans
           - Gebedsoefeningen: parochie/bidden/gebedsoefeningen.md
           - Gebed tot de Heilige Geest: parochie/bidden/heilige-geest.md
           - Gebed tot de aartsengel Michaël: parochie/bidden/aartsengel-michael.md
 
       - Gemeenschap:
-          - Over gemeenschap: parochie/gemeenschap/index.md
-          - Berichten: parochie/gemeenschap/berichten.md
-          - Koffie na de Mis: parochie/gemeenschap/koffie-na-de-mis.md
-          - RK koor Intermezzo: parochie/gemeenschap/intermezzo.md
-          - RK jongerenkoor Tutti: parochie/gemeenschap/tutti.md
-          - Katholiek worden: parochie/gemeenschap/katholiek-worden.md
+          - Onze gemeenschap: parochie/gemeenschap/index.md
+          - Katholiek worden: parochie/gemeenschap#katholiek-worden
+          - Koffie na de Mis: parochie/gemeenschap#koffie-na-de-mis
+          - Berichten: berichten/index.md
+          - RK jongerenkoor Tutti: parochie/gemeenschap#krk-jongerenkoor-tutti
+          - RK koor Intermezzo: parochie/gemeenschap#rk-koor-intermezzo
 
       - Roosters:
           - Overzicht: parochie/roosters/index.md

@@ -21,7 +21,7 @@ Als u uw kind wilt laten dopen, is het goed om het volgende te weten:
 - De doop vindt gewoonlijk plaats op **zondagmorgen**, na de eucharistieviering.  
 - In verband met de voorbereiding ligt er tussen de aanmelding en de datum van de doop **gewoonlijk minstens vier weken**.  
 - Er is minstens **één peter of meter** bij nodig. U leest daar [hier meer over](#peetouders-bij-de-doop).  
-- Als u uw kind wilt aanmelden voor het Doopsel, kunt u **contact opnemen met de pastoor** ([zie de contactpagina](/contact.md)).
+- Als u uw kind wilt aanmelden voor het Doopsel, kunt u **contact opnemen met de pastoor** ([zie de contactpagina](/contact.html)).
 
 Meer informatie over het Doopsel vindt u in dit filmpje:  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cXeSTiZPHGA?si=rNsegpzLbjpEM9ix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

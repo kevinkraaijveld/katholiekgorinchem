@@ -21,6 +21,13 @@ authors:
     # slug: url
     # url: url
 
+  Kevin:
+    name: Kevin
+    description: Sinds 202 lid van de parochie.
+    avatar: /assets/authors/kevin.png
+    # slug: url
+    # url: url
+
   bestuur:
     name: Parochiebestuur
     description: Het bestuur

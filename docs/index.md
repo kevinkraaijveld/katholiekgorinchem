@@ -24,9 +24,12 @@ fetch('berichten/index.html')
         const excerptText = excerpt ? excerpt.textContent.substring(0, 150) + '...' : '';
         
         document.getElementById('latest-post').innerHTML = `
-          <h3><a href="${titleLink.href}">${titleLink.textContent}</a></h3>
+        <a href="/berichten/${titleLink.getAttribute('href')}" class="latest-post-link" style="display: block; text-decoration: none; color: inherit;">
+          <h3>${titleLink.textContent}</h3>
           <p>${excerptText}</p>
-          <p><a href="${titleLink.href}">Lees verder →</a></p>
+          <p class="button"><strong>Lees verder →</strong></p>
+        </a>
+
         `;
       }
     } else {

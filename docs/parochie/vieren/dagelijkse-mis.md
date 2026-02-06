@@ -32,6 +32,6 @@ Op de **eerste woensdag van de maand** is er aansluitend aan de dagmis aanbiddin
 
 U kunt **misintenties** telefonisch opgeven bij het secretariaat. Het secretariaat is geopend op **maandagen en vrijdagen van 10.30–11.30u**.
 
-Ook kunt u een verzoek voor een misintentie **schriftelijk opgeven**. Vermeld daarbij eventueel een telefoonnummer waarop u bereikbaar bent. Zie [hier](/contact.md) voor het adres van de parochie.
+Ook kunt u een verzoek voor een misintentie **schriftelijk opgeven**. Vermeld daarbij eventueel een telefoonnummer waarop u bereikbaar bent. Zie [hier](/contact.html) voor het adres van de parochie.
 
 Voor het **stipendium voor een misintentie** hanteren we als richtlijn **€10**, maar u bent vrij te geven wat u wilt.
