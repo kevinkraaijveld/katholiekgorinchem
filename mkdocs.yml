@@ -8,7 +8,7 @@ theme:
   features:
     - navigation.tabs
   #   - toc.integrate
-
+    - navigation.footer
   font:
     text: Roboto
   logo: assets/martelarenlogo.png
@@ -25,6 +25,8 @@ nav:
 
   - Berichten:
       - Overzicht: berichten/index.md
+
+  - Liturgische Agenda: liturgischeagenda.md
 
   - Artikelen:
       - Overzicht: artikelen/index.md
@@ -76,9 +78,6 @@ nav:
           - Kostersrooster: parochie/roosters/kostersrooster.md
           - Lectorenrooster: parochie/roosters/lectorenrooster.md
           - Misdienaarsrooster: parochie/roosters/misdienaarsrooster.md
-
-
-
 
   - In Memoriam: inmemoriam.md
   - Over ons: overons.md
