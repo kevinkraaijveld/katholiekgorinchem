@@ -5,7 +5,7 @@ pin: false
 categories:
   - Agenda
 authors:
-  - bestuur
+  - pastoor
 hide:
   - toc
 ---

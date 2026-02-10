@@ -8,6 +8,13 @@
 
 authors:
   pastoor:
+    name: De Pastoor
+    description: Sinds het overlijden van Pastoor de Jong viert Pastoor Meijer de Mis in onze parochie.
+    avatar: https://katholiekgorinchem.nl/assets/authors/pastoor.png
+    # slug: url
+    # url: url
+
+  pastoordejong:
     name: Pastoor de Jong       
     description: Pastoor de Jong was onze parochiepriester tot aan zijn overlijden op 16 november 2025.        
     avatar: https://katholiekgorinchem.nl/assets/authors/pastoor.jpeg
@@ -38,6 +45,14 @@ authors:
   vdakker:
     name: Yvonne van den Akker-Savelsbergh
     description: exegete Nieuwe Testament
-    avatar: https://katholiekgorinchem.nl/assets/authors/redactie_icon.png
+    avatar: https://katholiekgorinchem.nl/assets/authors/yvonne.jpeg
     # slug: url           # Author profile slug
     # url: url            # Author website URL
+
+  bisdom:
+    name: Bisdom Rotterdam
+    description: De Kerk van Rotterdam is een netwerk van liefde tot opbouw van een beschaving van liefde. Het bisdom wordt geleid door bisschop Van den Hende
+    avatar: https://katholiekgorinchem.nl/assets/authors/bisdomrotterdam.jpg
+    # slug: url           # Author profile slug
+    # url: url            # Author website URL
+

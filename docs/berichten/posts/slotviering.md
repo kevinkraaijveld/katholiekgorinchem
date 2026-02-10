@@ -4,7 +4,7 @@ date: 2025-12-07
 categories:
   - Uit het bisdom
 authors:
-  - bestuur
+  - bisdom
 hide:
   - toc
 ---

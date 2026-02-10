@@ -1,6 +1,32 @@
-.md-header {
-  background: linear-gradient(to right, #27791a, #194424);
+/* Show tabs below 76.2344em (≈1219px) */
+@media screen and (max-width: 76.2344em) {
+  .md-tabs {
+    display: block !important;
+  }
 }
+
+/* Hide tabs again below 59.375em (≈950px) */
+@media screen and (max-width: 59.375em) {
+  .md-tabs {
+    display: none !important;
+  }
+}
+
+/* Header and Tabs use the two colors */
+.md-header {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.md-tabs {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+.md-tabs__link{
+  color: var(--text-color);
+}
+.md-header__topic .md-ellipsis{
+  color: var(--text-color);
+}
+
 p {
   font-size: 0.9em;
 }
@@ -49,7 +75,7 @@ span.blockspam {
   margin: 20px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-#latest-post {
+.latest-post-link {
   background: #f5f5f5;
   padding: 1px 25px;
   border-radius: 12px;
@@ -89,18 +115,21 @@ span.blockspam {
   object-position: 50% 0%;
 }
 
-.button{
+.button, .md-post__action{
   display: inline-block;
-  background-color: #333;
-  color: white!important;
+  background-color: var(--primary-color);
+  color: var(--text-color)!important;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s;
 }
+.md-post__action a{
+  color: var(--text-color)!important;
 
-.button:hover {
-  background-color: #555;
+}
+.button:hover, .md-post__action:hover {
+  background-color: var(--secondary-color);
 }
 
 #welkom-bij-de-parochie-van-de-heilige-martelaren-van-gorcum {
@@ -127,18 +156,18 @@ span.blockspam {
 }
 
 .grid-item {
-  background-color: #f5f5f5;
+  background-color: var(--primary-color);
   padding: 10px;
   border-radius: 12px;
   text-align: center;
   text-decoration: none;
-  color: inherit;
+  color: var(--text-color)!important;
   transition: background-color 0.3s;
 }
 
 .grid-item:hover {
-  background-color: #27791a;
-  color: white!important;
+  background-color: var(--secondary-color);
+  color: var(--text-color)!important;
 }
 
 .grid-item h3 {

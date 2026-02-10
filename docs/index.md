@@ -1,10 +1,13 @@
 ---
 title: Home
+hide:
+  - navigation
+  - footer
 ---
 # Welkom bij de parochie van de Heilige Martelaren van Gorcum
 
-## Laatste bericht
-<div id="latest-post">Loading...</div>
+## Laatste berichten
+<div id="latest-posts">Loading...</div>
 
 <script>
 fetch('berichten/index.html')
@@ -13,33 +16,38 @@ fetch('berichten/index.html')
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
     
-    // Material blog lists posts with .md-post class
-    const firstPost = doc.querySelector('.md-post');
+    // Get all posts
+    const posts = Array.from(doc.querySelectorAll('.md-post')).slice(0, 3); // first 3 posts
     
-    if (firstPost) {
-      const titleLink = firstPost.querySelector('h2 a') || firstPost.querySelector('.md-post__title a');
-      const excerpt = firstPost.querySelector('.md-post__excerpt') || firstPost.querySelector('p');
+    if (posts.length > 0) {
+      const container = document.getElementById('latest-posts');
+      container.innerHTML = ''; // clear loading
       
-      if (titleLink) {
+      posts.forEach(post => {
+        const titleLink = post.querySelector('h2 a') || post.querySelector('.md-post__title a');
+        const excerpt = post.querySelector('.md-post__excerpt') || post.querySelector('p');
         const excerptText = excerpt ? excerpt.textContent.substring(0, 150) + '...' : '';
         
-        document.getElementById('latest-post').innerHTML = `
-        <a href="/berichten/${titleLink.getAttribute('href')}" class="latest-post-link" style="display: block; text-decoration: none; color: inherit;">
-          <h3>${titleLink.textContent}</h3>
-          <p>${excerptText}</p>
-          <p class="button"><strong>Lees verder →</strong></p>
-        </a>
-
-        `;
-      }
+        if (titleLink) {
+          container.innerHTML += `
+            <a href="/berichten/${titleLink.getAttribute('href')}" class="latest-post-link" style="display: block; text-decoration: none; color: inherit; margin-bottom: 1.5rem;">
+              <h3>${titleLink.textContent}</h3>
+              <p>${excerptText}</p>
+              <p class="button"><strong>Lees verder →</strong></p>
+            </a>
+          `;
+        }
+      });
     } else {
-      document.getElementById('latest-post').innerHTML = '<p>Geen berichten gevonden</p>';
+      document.getElementById('latest-posts').innerHTML = '<p>Geen berichten gevonden</p>';
     }
   })
   .catch(err => {
-    document.getElementById('latest-post').innerHTML = '<p>Fout bij laden bericht</p>';
+    document.getElementById('latest-posts').innerHTML = '<p>Fout bij laden berichten</p>';
+    console.error(err);
   });
 </script>
+
 
 [Alle berichten](berichten/index.md)
 
