@@ -41,3 +41,10 @@ Via [deze link](https://anbi.rkcn.nl/publicaties/ROT26882) vindt u de verkorte s
 **Parochiële Caritas Instelling**
 
 De verkorte staat van baten en lasten van de PCI vindt u via [deze link](https://anbi.rkcn.nl/publicaties/ROT613).
+
+## Links
+
+[Bisdom Rotterdam](https://www.bisdomrotterdam.nl/)    
+[Nederlandse Kerkprovincie](https://www.rkkerk.nl/)    
+[Parochie H. Drie-eenheid](http://heiligedrieeenheid.eu/)    
+[RK documenten](https://www.rkdocumenten.nl/)    
