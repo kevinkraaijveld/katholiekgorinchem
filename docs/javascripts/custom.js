@@ -59,7 +59,6 @@ const liturgicalColors = {
 
 
 const liturgicalCalendar = [
-
   { color: "green", start: "2026-01-01", end: "2026-01-05" },
   { color: "white", start: "2026-01-06", end: "2026-01-06" },
   { color: "green", start: "2026-01-07", end: "2026-02-17" },
