@@ -8,6 +8,122 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+function updateNextMass() {
+    const now = new Date();
+    const display = document.getElementById('next-mass-display');
+
+    // --- 1. SPECIAL OVERRIDES ---
+    // We add an 'hour' property so the script knows when to "expire" the notice.
+    const specialMasses = {
+        // '2026-02-17': { text: 'vandaag (dinsdag) om 20:00', hour: 21 }, // Expire at 20:00
+        '2026-02-18': { text: 'Eerstvolgende mis: Aswoensdag: Eucharistieviering om 19:00', hour: 11 },
+    };
+
+    let foundMass = "";
+
+    // --- 2. THE SCANNER (Check next 7 days) ---
+    for (let i = 0; i < 7; i++) {
+        let checkDate = new Date(now);
+        checkDate.setDate(now.getDate() + i);
+
+        const dateKey = checkDate.toISOString().split('T')[0];
+        const dayOfWeek = checkDate.getDay();
+        const isToday = (i === 0);
+
+        // A. CHECK SPECIAL DATES FIRST
+        if (specialMasses[dateKey]) {
+            const special = specialMasses[dateKey];
+            // If it's today, only show it if the "expiry hour" hasn't passed yet
+            if (!isToday || (isToday && now.getHours() < special.hour)) {
+                foundMass = special.text;
+                break;
+            }
+        }
+
+        // B. CHECK REGULAR WEDNESDAY
+        if (dayOfWeek === 3) {
+            if (!isToday || (isToday && now.getHours() < 11)) {
+                foundMass = "woensdag om 10:00";
+                break;
+            }
+        }
+
+        // C. CHECK REGULAR SUNDAY
+        if (dayOfWeek === 0) {
+            if (!isToday || (isToday && now.getHours() < 12)) {
+                foundMass = "zondag om 11:00";
+                break;
+            }
+        }
+    }
+
+    display.innerText = foundMass;
+}
+updateNextMass();
+
+// Random quote home
+document.addEventListener("DOMContentLoaded", function () {
+
+  const isHome =
+    window.location.pathname === "/" ||
+    window.location.pathname === "/index.html";
+
+  if (!isHome) return;
+
+  const quotes = document.querySelectorAll("#quotes-container .parochian-quote");
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+
+  quotes.forEach((quote, index) => {
+    if (index !== randomIndex) {
+      quote.style.display = "none";
+    }
+  });
+
+});
+
+// Quotes slider home
+document.addEventListener("DOMContentLoaded", function () {
+
+  const isHome =
+    window.location.pathname === "/" ||
+    window.location.pathname === "/index.html";
+
+  if (!isHome) return;
+
+  const slider = document.querySelector("#quotes-slider");
+  if (!slider) return;
+
+  const quotes = slider.querySelectorAll(".parochian-quote");
+  if (quotes.length === 0) return;
+
+  let currentIndex = 0;
+  const intervalTime = 6000; // 6 seconds
+
+  // Show first
+  quotes[currentIndex].classList.add("active");
+
+  setInterval(() => {
+    quotes[currentIndex].classList.remove("active");
+
+    currentIndex = (currentIndex + 1) % quotes.length;
+
+    quotes[currentIndex].classList.add("active");
+  }, intervalTime);
+
+});
+
+
+// Make header title clickable
+document.addEventListener('DOMContentLoaded', function() {
+  const headerTitle = document.querySelector('.md-header__topic .md-ellipsis');
+  if (headerTitle && headerTitle.textContent.includes('HH. Martelaren van Gorcum')) {
+    headerTitle.style.cursor = 'pointer';
+    headerTitle.addEventListener('click', function() {
+      window.location.href = '/';
+    });
+  }
+});
+
 // Make header title clickable
 document.addEventListener('DOMContentLoaded', function() {
   const headerTitle = document.querySelector('.md-header__topic .md-ellipsis');

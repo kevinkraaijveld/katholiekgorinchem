@@ -6,7 +6,7 @@ hide:
 
 # In memoriam pastoor Ype de Jong
 
-Op zondag 16 november is pastoor De Jong van Gorinchem onverwacht overleden. Hij werd thuis aangetroffen en is gestorven aan een acute hartstilstand. Pastoor De Jong mocht 62 jaar oud worden.
+Op zondag 16 november is pastoor De Jong van Gorinchem thuis dood aangetroffen. Hij was overleden aan een acute hartstilstand. Hij is 62 jaar oud geworden.
 
 Ype Sjoerd, zoals hij in zijn familie werd genoemd, werd geboren in Leeuwarden en groeide op als middelste van drie jongens in een Nederlands Hervormd gezin. Het gezin verhuisde later naar Leerdam, waar hij zijn jeugd heeft doorgebracht. Hij was een intelligente jongen en besloot na het gymnasium in Gorinchem om natuurkunde te gaan studeren in Utrecht. Daar sloot hij vriendschap met een student en diens familie, die hem in contact brachten met de Rooms-Katholieke Kerk. Hij brak zijn studie natuurkunde af en ging theologie studeren in Heerlen. 
 

@@ -4,7 +4,7 @@ date: 2025-10-25
 categories:
   - Heiligen
 authors:
-  - pastoor
+  - pastoordejong
 hide:
   - toc
 ---

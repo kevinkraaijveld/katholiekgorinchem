@@ -34,11 +34,11 @@ authors:
     avatar: /assets/authors/kevin.png
     # slug: url
     # url: url
-
+    
   bestuur:
     name: Parochiebestuur
     description: Het bestuur
-    avatar: https://katholiekgorinchem.nl/assets/authors/redactie_icon.png
+    avatar: https://katholiekgorinchem.nl/assets/authors/bestuur.jpeg
     # slug: url           # Author profile slug
     # url: url            # Author website URL
 
@@ -55,4 +55,3 @@ authors:
     avatar: https://katholiekgorinchem.nl/assets/authors/bisdomrotterdam.jpg
     # slug: url           # Author profile slug
     # url: url            # Author website URL
-

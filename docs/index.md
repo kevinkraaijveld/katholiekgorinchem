@@ -3,53 +3,177 @@ title: Home
 hide:
   - navigation
   - footer
+  - toc
 ---
-# Welkom bij de parochie van de Heilige Martelaren van Gorcum
+<div class="hero-banner">
+  <h1 class="hero-title">Welkom bij de parochie van de Heilige Martelaren van Gorcum</h1>
+  
+  <div class="hero-badge">
+    <span id="next-mass-display">...laden...</span>
+  </div>
+</div>
 
 ## Laatste berichten
 <div id="latest-posts">Loading...</div>
 
 <script>
-fetch('berichten/index.html')
-  .then(response => response.text())
-  .then(html => {
+(async function() {
+  try {
+    const resp = await fetch('berichten/index.html');
+    const html = await resp.text();
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
-    
-    // Get all posts
-    const posts = Array.from(doc.querySelectorAll('.md-post')).slice(0, 3); // first 3 posts
-    
-    if (posts.length > 0) {
-      const container = document.getElementById('latest-posts');
-      container.innerHTML = ''; // clear loading
-      
-      posts.forEach(post => {
-        const titleLink = post.querySelector('h2 a') || post.querySelector('.md-post__title a');
-        const excerpt = post.querySelector('.md-post__excerpt') || post.querySelector('p');
-        const excerptText = excerpt ? excerpt.textContent.substring(0, 150) + '...' : '';
-        
-        if (titleLink) {
-          container.innerHTML += `
-            <a href="/berichten/${titleLink.getAttribute('href')}" class="latest-post-link" style="display: block; text-decoration: none; color: inherit; margin-bottom: 1.5rem;">
-              <h3>${titleLink.textContent}</h3>
-              <p>${excerptText}</p>
-              <p class="button"><strong>Lees verder →</strong></p>
-            </a>
-          `;
-        }
-      });
-    } else {
-      document.getElementById('latest-posts').innerHTML = '<p>Geen berichten gevonden</p>';
+
+    // Pak de eerste 3 artikelen in de volgorde zoals op berichten/index.html
+    const posts = Array.from(doc.querySelectorAll('article.md-post')).slice(0, 3);
+    const container = document.getElementById('latest-posts');
+    if (!container) return;
+    container.innerHTML = '';
+
+    if (posts.length === 0) {
+      container.textContent = 'Geen berichten gevonden';
+      return;
     }
-  })
-  .catch(err => {
-    document.getElementById('latest-posts').innerHTML = '<p>Fout bij laden berichten</p>';
+
+    posts.forEach(post => {
+      // Clone de volledige article node zodat titel, image en meta behouden blijven
+      const cloned = post.cloneNode(true);
+
+      // Pas relatieve links aan zodat ze naar /berichten/<slug>.html wijzen
+      cloned.querySelectorAll('a').forEach(a => {
+        const href = a.getAttribute('href') || '';
+        // Laat absolute links, anchor-links en mailto/ tel door
+        if (/^(https?:|mailto:|tel:|#)/i.test(href)) return;
+        // Als het al begint met /berichten laat het zoals het is
+        if (href.startsWith('/berichten')) return;
+        // Normaliseer en prefix naar /berichten/
+        const clean = href.replace(/^\.?\/+/, '');
+        a.setAttribute('href', '/berichten/' + clean);
+      });
+
+      // Verwijder eventuele scripts uit de gekloonde inhoud, voor de veiligheid
+      cloned.querySelectorAll('script').forEach(s => s.remove());
+
+      // Voeg de gekloonde article toe aan de container
+      container.appendChild(cloned);
+    });
+  } catch (err) {
     console.error(err);
-  });
+    const container = document.getElementById('latest-posts');
+    if (container) container.textContent = 'Fout bij laden berichten';
+  }
+})();
 </script>
 
+<a href="/berichten/index.html" class="button" >Alle berichten</a>
+---
 
-[Alle berichten](berichten/index.md)
+## Vaste quote
+
+<div class="parochian-quote">
+  <img src="assets/parochianen/pastoormeijer.jpg" alt="Pastoor Meijer" class="round-image">
+
+  <div class="quote-content">
+    <p class="quote-text">
+      “Sinds het overlijden van Pastoor De Jong vier ik de Mis in deze parochie, en wat mij telkens opnieuw treft is de warmte en oprechte betrokkenheid van de gemeenschap. Het is een vreugde om hier te mogen dienen.”
+    </p>
+
+    <div class="quote-author">
+      <span class="name">Pastoor Meijer</span>
+      <span class="meta">Sinds het overlijden van Pastoor de Jong viert Pastoor Meijer de Mis in onze parochie.</span>
+    </div>
+  </div>
+</div>
+
+## Random quote
+
+<div id="quotes-container">
+
+  <div class="parochian-quote">
+    <img src="assets/parochianen/olivier.jpeg" alt="Olivier" class="round-image">
+    <div class="quote-content">
+      <p class="quote-text">
+        “Samen met mijn gezin naar de Mis gaan is voor mij een van de mooiste momenten van de week. Het brengt rust, verbondenheid en herinnert ons aan wat echt belangrijk is.”
+      </p>
+      <div class="quote-author">
+        <span class="name">Olivier</span>
+        <span class="meta">Beheerder van de website en redactielid.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="parochian-quote">
+    <img src="assets/parochianen/kevin.png" alt="Kevin Kraaijveld" class="round-image">
+    <div class="quote-content">
+      <p class="quote-text">
+        “Sinds ik hier kom, heb ik weer rust gevonden. De gemeenschap voelt als een tweede thuis.”
+      </p>
+      <div class="quote-author">
+        <span class="name">Kevin Kraaijveld</span>
+        <span class="meta">Parochiaan sinds 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="parochian-quote">
+    <img src="assets/parochianen/pastoormeijer.jpg" alt="Pastoor Meijer" class="round-image">
+    <div class="quote-content">
+      <p class="quote-text">
+        “Sinds het overlijden van Pastoor De Jong vier ik de Mis in deze parochie, en wat mij telkens opnieuw treft is de warmte en oprechte betrokkenheid van de gemeenschap. Het is een vreugde om hier te mogen dienen.”
+      </p>
+      <div class="quote-author">
+        <span class="name">Pastoor Meijer</span>
+        <span class="meta">Sinds het overlijden van Pastoor de Jong viert Pastoor Meijer de Mis in onze parochie.</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+## Quote slider
+
+<div id="quotes-slider">
+
+  <div class="parochian-quote">
+    <img src="assets/parochianen/olivier.jpeg" alt="Olivier" class="round-image">
+    <div class="quote-content">
+      <p class="quote-text">
+        “Samen met mijn gezin naar de Mis gaan is voor mij een van de mooiste momenten van de week. Het brengt rust, verbondenheid en herinnert ons aan wat echt belangrijk is.”
+      </p>
+      <div class="quote-author">
+        <span class="name">Olivier</span>
+        <span class="meta">Beheerder van de website en redactielid.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="parochian-quote">
+    <img src="assets/parochianen/kevin.png" alt="Kevin Kraaijveld" class="round-image">
+    <div class="quote-content">
+      <p class="quote-text">
+        “Sinds ik hier kom, heb ik weer rust gevonden. De gemeenschap voelt als een tweede thuis.”
+      </p>
+      <div class="quote-author">
+        <span class="name">Kevin Kraaijveld</span>
+        <span class="meta">Parochiaan sinds 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="parochian-quote">
+    <img src="assets/parochianen/pastoormeijer.jpg" alt="Pastoor Meijer" class="round-image">
+    <div class="quote-content">
+      <p class="quote-text">
+        “Sinds het overlijden van Pastoor De Jong vier ik de Mis in deze parochie, en wat mij telkens opnieuw treft is de warmte en oprechte betrokkenheid van de gemeenschap. Het is een vreugde om hier te mogen dienen.”
+      </p>
+      <div class="quote-author">
+        <span class="name">Pastoor Meijer</span>
+        <span class="meta">Sinds het overlijden van Pastoor de Jong viert Pastoor Meijer de Mis in onze parochie.</span>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 ---
 
